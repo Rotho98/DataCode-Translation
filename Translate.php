@@ -22,10 +22,10 @@ class Translate
         $this->translationLocation = "{$translationDir}{$language}.json";
         $this->fallbackLocation = "{$translationDir}{$fallbackLanguage}.json";
         if (!file_exists($this->translationLocation)) {
-            print("Translation not found at {$this->translationLocation}");
+            print("Translation file not found at {$this->translationLocation}");
         }
         if (!file_exists($this->fallbackLocation)) {
-            print("Fallback Translation not found at {$this->fallbackLocation}");
+            print("Fallback file Translation not found at {$this->fallbackLocation}");
         }
 
     }
